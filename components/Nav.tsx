@@ -17,12 +17,6 @@ export default function Nav() {
 
         <nav className="flex items-center gap-8">
           <a
-            href="#gallery"
-            className="label hidden text-ink/60 transition-colors hover:text-ink sm:block"
-          >
-            Gallery
-          </a>
-          <a
             href="#buy"
             className="label rounded-full border border-ink px-5 py-2 transition-colors hover:bg-ink hover:text-paper"
           >
