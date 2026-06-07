@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-ink text-paper;
+  }
+}
+
+@layer utilities {
+  /* Tight, oversized display type used across the page */
+  .display {
+    @apply font-sans font-semibold tracking-tightest leading-[0.9];
+  }
+
+  /* Small uppercase label used for eyebrows / meta */
+  .label {
+    @apply text-xs font-medium uppercase tracking-[0.2em];
+  }
+}
